@@ -46,12 +46,9 @@
         </script>
 <script type="text/javascript" charset="utf-8">
 	function gothere() {
-       alert("hh");
-       var ref = window.open('http://apache.org', '_blank', 'location=yes');
-       ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
-       ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
-       ref.addEventListener('exit', function() { alert(event.type); });
-
+       	alert("hh2");
+		window.plugins.ChildBrowser.showWebPage('http://www.google.com',
+                                        { showLocationBar: true });
     }
 </script>
 
